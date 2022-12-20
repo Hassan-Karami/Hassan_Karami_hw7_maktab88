@@ -1,0 +1,261 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana,sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+a{
+  text-decoration: none;
+
+}
+ul{
+  list-style: none;
+}
+.main-header {
+  background-color: black;
+  width: 100%;
+  color: white;
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  background-color: #009688;
+ 
+}
+
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  }
+  nav ul{
+    display: flex;
+    list-style: none;
+   
+  }
+.main-header a {
+  text-decoration: none;
+  color: white;
+  
+}
+
+.main-header a:hover{
+  color: black;
+  background-color: white;
+}
+.main-header .logo:hover{
+  background-color: #ccc;
+
+}
+.search-logo{
+padding:8px 16px;
+}
+.search-logo:hover{
+  background-color: #009688;
+}
+nav ul li{
+  padding: 8px 16px;
+}
+#sailsBoat{
+  background: url("./sailboat.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-top: 35px;
+  height:576px ;
+  position: relative;
+  
+}
+.sail-btn{
+color: white;
+background-color: black;
+position: absolute;
+bottom: 30px;
+left: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.sail-btn a{
+  color: white;
+  padding: 10px;
+  font-size: 26px;
+  text-transform: uppercase;
+}
+#team-container{
+  background-color: white;
+  line-height: 1.5;
+  padding: 64px 16px;
+
+}
+.team-description{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+
+
+
+}
+#our-team{
+  font-family: "Segoe UI",Arial,sans-serif;;
+  font-size: 30px;
+  margin-bottom: 10px 0;
+
+}
+.team-information{
+
+  line-height: 1.5;
+  display: flex;
+  justify-content: space-around;
+}
+.person{
+
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  
+}
+.person img{
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.person h2{ 
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+#work-section{
+  background-color: #333333;
+  height:576px ;
+  padding: 64px 8px;
+  display: flex;
+  column-gap: 15px;
+ 
+}
+.work-quarter{
+  width: 25%;
+  color: white;
+ 
+}
+ h2{
+  font-family: "Segoe UI",Arial,sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  margin: 10px 0;
+  
+}
+.nature-pic{
+
+  width: 100%;
+  height: 40%;
+  display: block;
+
+}
+.wq-information{
+  padding:10px 16px;
+  background-color: white;
+  color: black;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+.wq-information p{
+  margin-top: 15px;
+}
+h3{
+  font-size: 24px;
+  font-family: "Segoe UI",Arial,sans-serif;
+  font-weight: 400;
+}
+h4{
+  font-size: 20px;
+  font-family: "Segoe UI",Arial,sans-serif;
+  font-weight: 400;
+}
+
+.margin-left-7px{
+  margin-left: 7px;
+
+}
+.margin-right-7px{
+  margin-right: 7px;
+
+}
+#plans-section{
+  border: 3px solid blue;
+  padding: 64px 8px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  column-gap: 20px;
+  
+}
+.plans-container{
+  justify-content: space-between;
+
+}
+.plan{
+  width: 33.3%;
+}
+.plan-feature{
+  border-bottom: 1px solid black;
+  padding: 15px 0;
+}
+.plan-list{
+  border: red solid 1px;
+
+}
+
+
+.color-black{
+  color: black;
+}
+.plan-title{
+  background-color: black;
+  color: white;
+}
+.price{
+  font-size: 30px;
+  font-family: "Segoe UI",Arial,sans-serif;
+  padding: 16px;
+
+}
+.price p{
+  font-family: Verdana,sans-serif;;
+  font-size: 15px;
+  opacity: 0.60;
+
+}
+.button-box{
+  background-color: #f0f0f0;
+  padding:25px;
+}
+.button-box button{
+  background-color: #009688!important;
+  width: 32%;
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 15px;
+  border: 0;
+}
