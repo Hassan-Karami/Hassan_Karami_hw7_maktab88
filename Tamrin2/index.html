@@ -24,8 +24,8 @@
           <a href="#team-container"><li>Team</li></a>
           <a href="#work-section"><li>Work</li></a>
           <a href="#plans-section"><li>Price</li></a>
-          <a href="#"><li>Contact</li></a>
-          <a href="#"><li>Dropdown</li></a>
+          <a href="#contact-section"><li>Contact</li></a>
+          <a href="#"><li>Dropdown<i class="fa fa-caret-down"></i></li></a>
         </ul>
       </nav>
       <div class="search-logo">
@@ -68,6 +68,7 @@
       </section>
 
       <section id="work-section">
+        <div id="plus-sign"><i class="fa fa-plus"></i></div>
         <div class="work-quarter margin-left-7px">
           <h2>Our Work</h2>
           <p>
@@ -117,11 +118,12 @@
       </section>
       <section id="plans-section">
         <h2>PRICING</h2>
-        <p>Choose a pricing plan that fits your needs.</p>
+        <p class="choose-pricing-p">
+          Choose a pricing plan that fits your needs.
+        </p>
+
         <div class="plans-container">
-
-
-          <div class="plan">
+          <div class="plan margin-left-7px">
             <ul class="plan-list">
               <li class="plan-feature plan-title"><h2>Basic</h2></li>
               <li class="plan-feature"><b>10GB</b> Storage</li>
@@ -139,11 +141,99 @@
               </li>
             </ul>
           </div>
-          
 
+          <div class="plan">
+            <ul class="plan-list">
+              <li class="plan-feature plan-title pro"><h2>Pro</h2></li>
+              <li class="plan-feature"><b>25GB</b> Storage</li>
+              <li class="plan-feature"><b>25</b> Emails</li>
+              <li class="plan-feature"><b>25</b> Domains</li>
+              <li class="plan-feature"><b>Endless</b> support</li>
+              <li class="plan-feature price">
+                <b><i class="fa fa-usd" aria-hidden="true"></i></b>&nbsp; 25
+                <p>per month</p>
+              </li>
+              <li class="button-box">
+                <button>
+                  <i class="fa fa-check" aria-hidden="true"></i>Sign Up
+                </button>
+              </li>
+            </ul>
+          </div>
 
+          <div class="plan margin-right-7px">
+            <ul class="plan-list">
+              <li class="plan-feature plan-title"><h2>Premium</h2></li>
+              <li class="plan-feature"><b>50GB</b> Storage</li>
+              <li class="plan-feature"><b>50</b> Emails</li>
+              <li class="plan-feature"><b>50</b> Domains</li>
+              <li class="plan-feature"><b>Endless</b> support</li>
+              <li class="plan-feature price">
+                <b><i class="fa fa-usd" aria-hidden="true"></i></b>&nbsp; 50
+                <p>per month</p>
+              </li>
+              <li class="button-box">
+                <button>
+                  <i class="fa fa-check" aria-hidden="true"></i>Sign Up
+                </button>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
+      <section id="contact-section">
+        <div class="address">
+          <span class="cu-text">Contact Us</span>
+          <h3>Address</h3>
+          <p>Swing by for a cup of coffee, or whatever.</p>
+          <p><i class="fa fa-map-marker" aria-hidden="true"></i>Chicago, US</p>
+          <p><i class="fa fa-phone" aria-hidden="true"></i>+00 1515151515</p>
+          <p>
+            <i class="fa fa-envelope dd" aria-hidden="true"></i>test@test.com
+          </p>
+        </div>
+        <div class="form-container">
+          <form action="">
+            <div>
+              <label for="">Name</label>
+              <input class="f-input" type="text" />
+            </div>
+            <div>
+              <label for="">Email</label>
+              <input class="f-input" type="text" />
+            </div>
+            <div>
+              <label for="">Message</label>
+              <input class="f-input" type="text" />
+            </div>
+            <div class="submit-box">
+              
+              <div class="left-ch">
+                <input class="checkbox" type="checkbox" />
+                <label class="checkbox-label" for=""> I Like it</label>
+              </div>
+              <button class="form-send-btn">Send</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section id="map">
+      </section>
     </main>
+    <footer>
+      <p class="follow-us">Follow Us</p>
+      <div class="social-medias-container">
+        <div ><a class="sm-anchor" href="#"><i class="fa fa-facebook"></i></a></div>
+        <div ><a class="sm-anchor" href="#"><i class="fa fa-linkedin"></i></a></div>
+        <div ><a class="sm-anchor" href="#"><i class="fa fa-twitter"></i></a></div>
+        <div ><a class="sm-anchor" href="#"><i class="fa fa-google-plus"></i></a></div>
+        <div ><a class="sm-anchor" href="#"><i class="fa fa-instagram"></i></a></div>
+
+
+      </div>
+      <p >Powered by <a class="w3-css-link" href="https://www.w3schools.com/css/default.asp">w3.css</a></p>
+
+      
+    </footer>
   </body>
 </html>

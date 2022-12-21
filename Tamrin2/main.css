@@ -29,6 +29,7 @@ ul{
 
 .logo{
   background-color: #009688;
+  color: white;
  
 }
 
@@ -53,9 +54,11 @@ nav{
 .main-header a:hover{
   color: black;
   background-color: white;
+  cursor: pointer;
 }
 .main-header .logo:hover{
   background-color: #ccc;
+  cursor: pointer;
 
 }
 .search-logo{
@@ -63,6 +66,7 @@ padding:8px 16px;
 }
 .search-logo:hover{
   background-color: #009688;
+  cursor: pointer;
 }
 nav ul li{
   padding: 8px 16px;
@@ -93,6 +97,10 @@ align-items: center;
   font-size: 26px;
   text-transform: uppercase;
 }
+.sail-btn a:hover{
+  background-color: #009688;
+}
+
 #team-container{
   background-color: white;
   line-height: 1.5;
@@ -137,6 +145,9 @@ align-items: center;
   margin-bottom: 10px;
   margin-top: 20px;
 }
+.person img:hover{
+  opacity: 0.5;
+}
 .person h2{ 
   font-size: 24px;
   font-weight: 400;
@@ -148,8 +159,35 @@ align-items: center;
   padding: 64px 8px;
   display: flex;
   column-gap: 15px;
+  position: relative;
  
 }
+#plus-sign{
+  background-color: #009688;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  position: absolute;
+  bottom: -25px;
+  right: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#plus-sign .fa-plus{
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+}
+#plus-sign:hover{
+  background-color: #ccc;
+  cursor: pointer;
+}
+#plus-sign:hover .fa-plus{
+  color: black;
+}
+
 .work-quarter{
   width: 25%;
   color: white;
@@ -202,29 +240,38 @@ h4{
 
 }
 #plans-section{
-  border: 3px solid blue;
+
   padding: 64px 8px;
   display: flex;
   text-align: center;
   flex-direction: column;
-  column-gap: 20px;
-  
-}
-.plans-container{
   justify-content: space-between;
+
+
+}
+.choose-pricing-p{
+  margin-bottom: 30px;
+
+}
+
+.plans-container{
+  display: flex;
+  justify-content: space-between;
+  column-gap: 15px;
 
 }
 .plan{
   width: 33.3%;
+  border: 1px solid #ccc ;
+}
+.plan:hover{
+  box-shadow: 2px 10px 30px 3px rgba(115,102,102,0.79);
 }
 .plan-feature{
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ccc ;
   padding: 15px 0;
 }
-.plan-list{
-  border: red solid 1px;
 
-}
 
 
 .color-black{
@@ -233,6 +280,9 @@ h4{
 .plan-title{
   background-color: black;
   color: white;
+}
+.pro{
+  background-color: #666666;
 }
 .price{
   font-size: 30px;
@@ -250,8 +300,9 @@ h4{
   background-color: #f0f0f0;
   padding:25px;
 }
+
 .button-box button{
-  background-color: #009688!important;
+  background-color: #009688;
   width: 32%;
   color: white;
   font-size: 15px;
@@ -259,3 +310,145 @@ h4{
   padding: 15px;
   border: 0;
 }
+.button-box button:hover{
+  background-color: #ccc;
+  color: black;
+  cursor: pointer;
+
+}
+#contact-section{
+  background-color: #f0f0f0;
+ 
+  display: flex;
+  padding: 64px 16px;
+  column-gap: 15px;
+
+}
+.address{
+
+  width: 50%;
+
+}
+
+.cu-text{
+  display: inline-block;
+  font-size: 26px;
+  border-bottom: #009688 6px solid;
+  margin-bottom: 15px;
+  width: 145px;
+}
+
+.address i{
+  font-size: 30px;
+  color: #009688;
+  margin-bottom: 15px;
+
+  
+}
+.address{
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.form-container{
+  background-color: white;
+  box-shadow: 0px -1px 21px -3px rgba(0,0,0,0.86);
+  width: 50%;
+  padding: 16px;
+
+}
+.form-container div{
+  margin: 8px 0;
+ 
+}
+.f-input{
+  width: 100%;
+  min-height: 45px;
+  border: none;
+  border-bottom:solid 1px #666666;
+}
+.form-container label{
+  font-size: 16px;
+  font-weight: 400;
+}
+.checkbox{
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+.left-ch{
+  display: flex;
+  align-items: center;
+}
+.submit-box{
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+}
+.form-send-btn{
+  padding: 8px 16px;
+  color: white;
+  background-color: black;
+  font-size: 16px;
+}
+.form-send-btn:hover{
+  background-color: #ccc;
+  border: 2px solid #ccc;
+  color: black;
+  cursor: pointer;
+}
+
+#map{
+ 
+  background: url("./map.jpg");
+  height: 576px;
+  background-size: cover;
+  background-position: center;
+
+}
+footer{
+  background-color: black;
+  min-height: 260px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.follow-us{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+.w3-css-link{
+  color: white;
+  border-bottom: 1px white solid;
+}
+.social-medias-container{
+  width: 270px;
+  height:50px ;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.sm-anchor{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #009688;
+}
+.sm-anchor:hover{
+  background-color: #ccc;
+  
+}
+.sm-anchor:hover .fa{
+  color: black;
+}
+.social-medias-container .fa{
+ color: white;
+ font-size: 20px;
+}
+
