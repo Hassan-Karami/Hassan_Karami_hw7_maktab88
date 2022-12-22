@@ -25,7 +25,7 @@ function create(userInput) {
 }
 
 function update(userInput) {
-  if (userData.length === 0 || userData.includes({})) {
+  if (userData.length === 0 || !userData.some(item=>toString.call(item)==="[object Object]")) {
     throw new Error("userData is Empty or doesn't hava any object in it");
   }
   userData.forEach(function (item) {
